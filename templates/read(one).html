@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read One</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created at</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{users_from_controller.first_name}}</td>
+                <td>{{users_from_controller.last_name}}</td>
+                <td>{{users_from_controller.email}}</td>
+                <td>{{users_from_controller.created_at}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <a href="/edit/{{users_from_controller.id}}">Edit</a> | <a href="/delete/{{users_from_controller.id}}">Delete</a>
+</body>
+</html>
